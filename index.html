@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RealTimeBridge</title>
+  </head>
+  <body>
+    <h2>Step 1: Start your Camera</h2>
+    <video id="localVideo" autoplay playsinline muted></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+    <br />
+    <button id="startBtn">Enable Camera</button>
+
+    <h2>Step 2: Create or Join Call</h2>
+    <button id="createBtn">Create Call</button>
+    <input id="callInput" placeholder="Enter Call ID" />
+    <button id="joinBtn">Join Call</button>
+
+    <h2>Step 3: Hang Up</h2>
+    <button id="hangupBtn">Hang Up</button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
