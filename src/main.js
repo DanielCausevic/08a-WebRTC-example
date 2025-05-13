@@ -37,8 +37,6 @@ startBtn.onclick = async () => {
 
 createBtn.onclick = async () => {
   const callDoc = doc(firestore, "calls", crypto.randomUUID());
-  const offerCandidates = doc(callDoc, "offerCandidates");
-  const answerCandidates = doc(callDoc, "answerCandidates");
 
   callInput.value = callDoc.id;
 
